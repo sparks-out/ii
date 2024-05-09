@@ -1,0 +1,12 @@
+@import url(app.css);
+
+.error {
+  display: flex;
+  flex-direction: column;
+  color:red;
+  height: 90vh;
+}
+
+.error h2 {
+  font-size: 3rem;
+}

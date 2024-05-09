@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>QLess</title>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!-- SpeakBot Container -->
+  <div id="speakbot-container" style="position: fixed; bottom: 20px; right: 20px; width: 300px; height: 200px; border: 1px solid #ccc; border-radius: 5px; background-color: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+    <div id="history" style="height: 150px; overflow-y: scroll; padding: 5px;"></div>
+    <form style="padding: 5px;">
+      <input id="message" placeholder="enter your query" style="width: calc(100% - 100px);" />
+      <button id="send" type="submit" style="margin-left: 5px; color: white; background-color: #00abe4;">send</button>
+    </form>
+    <div id="interim" style="color: white;"></div>
+  </div>
+  <!-- End SpeakBot Container -->
+  <script src="./bundle.js"></script>
+  <script src="./index.js"></script>
+  <script src="webgazer.js"></script>
+  <script src="eyetracker.js"></script>
+
+  <!--
+  <script src="control.js"></script>
+  
+  <button id="startButton">Start Listener</button>
+  <button id="stopButton">Stop Listener</button>
+  -->
+  
+</body>
+</html>

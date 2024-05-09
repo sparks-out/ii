@@ -8,6 +8,18 @@
   <meta name="description" content="Web site created using create-react-app" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <style>
+    /* CSS to style the pointer */
+    .pointer {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: rgba(8, 0, 255, 0.919);
+        content:url(cursor.png);
+        border-radius: 50%;
+        z-index: 9999;
+    }
+  </style>
   <title>QLess</title>
 </head>
 <body>
@@ -22,11 +34,13 @@
     </form>
     <div id="interim" style="color: white;"></div>
   </div>
+  <div class="pointer"></div>
   <!-- End SpeakBot Container -->
   <script src="./bundle.js"></script>
   <script src="./index.js"></script>
   <script src="webgazer.js"></script>
   <script src="eyetracker.js"></script>
+  <script src="mover.js"></script>
 
   <!--
   <script src="control.js"></script>
